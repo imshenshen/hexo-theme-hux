@@ -1,45 +1,34 @@
-#Hexo-Theme-Huxblog
+#Hexo-Theme-Hux
+> - forked from [Kaijun/hexo-theme-huxblog](https://github.com/imshenshen/hexo-theme-hux)
 
-> Ported Theme of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), Thank [Huxpro](https://github.com/Huxpro) for designing such a flawless theme.
+> - Ported Theme of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), Thank [Huxpro](https://github.com/Huxpro) for designing such a flawless theme.
 
-###[Demo &rarr;](http://kaijun.rocks/hexo-theme-huxblog/)
-
-
+### [Demo &rarr;](http://kaijun.rocks/hexo-theme-huxblog/)
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 
-## Usage
+### Start
+1. clone to `your-hexo-dir/theme/ `
+2. edit `your-hexo-dir/theme/hexo-theme-hux/_config.yml`
 
-I didn't publish it as a single theme folder because a few of the pages are added and modified manually, so you should manually create some extra folders in `scaffolds` for the new pages and modify the `_config.yml` if you only have the single theme folder.
+### write posts
+you can use `$ hexo new [layout] <title>
+` to create new post. 
 
-So i just pushed the whole hexo project for your convenience, all pre settings and boilerplates are included, have a look and go ahead customizing your own blog!
-
-##### 1.Init
-
+The `front-matter` of a post looks like that:
 ```
-git clone https://github.com/Kaijun/hexo-theme-huxblog.git
-cd hexo-theme-huxblog
-npm install
+---
+title: FirstPost
+subtitle: Hello world
+date: 2016-06-01 23:39:02
+header-img: "post-bg.jpg"
+header-img-color: 1
+tags:
+    - javascript
+---
 ```
+if `header-img-color` set to 0, then you should use a pic as  `header-img` with dark background. Like [this](http://blog.imshenshen.com/2016/06/27/generator-angular-admin/)
 
-##### 2.Modify
-Modify `_config.yml` file with your own info.
-Especially the section:
+if `header-img-color` set to 1, then you should use a pic as  `header-img` with light background. And the font color automatic change to black. Like [this](http://blog.imshenshen.com/2016/06/01/firstPost/)
 
-```
-deploy:
-  type: git
-  repo: https://github.com/Kaijun/hexo-theme-huxblog
-  branch: gh-pages
-```
-Replace with your own repo!
-
-##### 3.Writting/Serve/Deploy
-
-```
-hexo new post IMAPOST
-hexo serve // run hexo in local environment
-hexo clean && hexo deploy // hexo will push the static files automatically into the specifig branch(gh-pages) of your repo!
-```
-
-##### 4.Enjoy! 
-Please [**Star**](https://github.com/kaijun/hexo-theme-huxblog/stargazers) this Project if you like it! [**Following**](https://github.com/Kaijun) would also be appreciated!
+### other things
+Sidebar? Keynote Layout? Analytics?... Please check [huxpro.github.io](https://github.com/Huxpro/huxpro.github.io)

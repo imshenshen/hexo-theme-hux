@@ -9,9 +9,9 @@
 
     <title>
         <% if (page.title) { %>
-          <%= page.title + ' - ' + config.SEOTitle %>
+          <%= page.title + ' - ' + theme.SEOTitle %>
         <% } else{%>
-          <%= config.SEOTitle %>
+          <%= theme.SEOTitle %>
         <% } %>
     </title>
 
@@ -21,7 +21,7 @@
     <%- css('css/bootstrap.min.css') %>
 
     <!-- Custom CSS -->
-    <%- css('css/hux-blog.min.css') %>
+    <%- css('css/hux-blog.css') %>
 
     <!-- Pygments Github CSS -->
     <%- css('css/syntax') %>
