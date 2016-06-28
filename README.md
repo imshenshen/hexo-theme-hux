@@ -31,4 +31,4 @@ if `header-img-color` set to 0, then you should use a pic as  `header-img` with 
 if `header-img-color` set to 1, then you should use a pic as  `header-img` with light background. And the font color automatic change to black. Like [this](http://blog.imshenshen.com/2016/06/01/firstPost/)
 
 ### other things
-Sidebar? Keynote Layout? Analytics?... Please check [huxpro.github.io](https://github.com/Huxpro/huxpro.github.io)
+Sidebar? Keynote Layout? Analytics?... Please check [huxpro.github.io](https://github.com/Huxpro/huxpro.github.io#document)
